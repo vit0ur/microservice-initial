@@ -17,7 +17,6 @@ public class ProdutoConsumer {
 
     @RabbitListener(queues = "${broker.queue.orders.name}")
     public void processarPedido(PedidoDTO pedido) {
-        System.out.println("teste");
         for (ItemPedidoDTO item : pedido.getListaProdutos()) {
             produtoService.atualizarEstoque(item.getIdProduto(), item.getQuantidade());
         }

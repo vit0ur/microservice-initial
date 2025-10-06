@@ -10,10 +10,23 @@ public class ItemPedido {
     private Long idProduto;
     private Integer quantidade;
 
-    public ItemPedido(Long id, Long idProduto, Integer quantidade) {
+    @ManyToOne
+    @JoinColumn(name = "pedido_id")
+    private Pedido pedido;
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
+
+    public ItemPedido(Long id, Pedido pedido, Integer quantidade, Long idProduto) {
         this.id = id;
-        this.idProduto = idProduto;
+        this.pedido = pedido;
         this.quantidade = quantidade;
+        this.idProduto = idProduto;
     }
 
     public ItemPedido() {

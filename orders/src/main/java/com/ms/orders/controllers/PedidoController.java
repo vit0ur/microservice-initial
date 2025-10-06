@@ -4,6 +4,8 @@ import com.ms.orders.domain.Pedido;
 import com.ms.orders.services.PedidoService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/pedidos")
 public class PedidoController {
@@ -16,5 +18,10 @@ public class PedidoController {
     @PostMapping
     public Pedido criar(@RequestBody Pedido pedido) {
         return service.criarPedido(pedido);
+    }
+
+    @GetMapping
+    public List<Pedido> listarTodos(){
+        return service.listarTodos();
     }
 }

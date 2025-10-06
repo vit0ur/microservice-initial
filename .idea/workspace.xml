@@ -5,28 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cce047d-11a2-4011-8ec8-a172660257a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/consumer/PedidoConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/dtos/ProdutoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/repository/ItemPedidoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/ItemPedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/controllers/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/controllers/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/consumer/ProdutoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/consumer/ProdutoConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/service/ProdutoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vit0ur"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/vit0ur/microservice-initial.git",
+    "accountId": "6a5b65f4-3beb-4512-bcb9-c9dbcae2344b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="33hEqq0wAJnfHlEVO4XyrpXycXw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.OrdersApplication.executor": "Run",
+    "Application.ProductApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",

@@ -5,6 +5,8 @@ import com.ms.orders.repository.PedidoRepository;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -27,18 +29,20 @@ public class PedidoService {
         return pedido;
     }
 
-    public void atualizaStatus(Long id, String status){
-        Optional<Pedido> pedidoOpt = pedidoRepository.findById(id);
-        pedidoOpt.ifPresent(pedido -> {
-            pedido.getListaProdutos().forEach(itemPedido -> {
-                if (itemPedido.getQuantidade() > 0) {
-                    pedido.setStatus("disponivel");
-                }else {
-                    pedido.setStatus("Indisponivel");
-                }
-            });
+    public Pedido buscarPorId(Long id){
+        Pedido pedido = pedidoRepository.findById(id).orElseThrow(() -> new RuntimeException("Nenhum pedido encontrado"));
+        return pedido;
+    }
 
+    public void atualizarStatusPedido (Long id, String status){
+        Optional<Pedido> pedidoOptional = pedidoRepository.findById(id);
+        pedidoOptional.ifPresent(pedido ->  {
+            pedido.setStatus(status);
             pedidoRepository.save(pedido);
         });
+    }
+
+    public List<Pedido> listarTodos(){
+        return pedidoRepository.findAll();
     }
 }

@@ -12,7 +12,7 @@ public class Pedido {
     private BigDecimal valorTotal;
     private String status;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ItemPedido> listaProdutos;
 
     public Pedido() {
