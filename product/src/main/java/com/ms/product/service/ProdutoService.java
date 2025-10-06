@@ -24,13 +24,15 @@ public class ProdutoService {
         return repository.save(produto);
     }
 
-    public void atualizarEstoque(Long id, Integer quantidadeVendida) {
+    public int atualizarEstoque(Long id, Integer quantidadeVendida) {
         Optional<Produto> produtoOpt = repository.findById(id);
         produtoOpt.ifPresent(produto -> {
             produto.setQuantidadeEmEstoque(produto.getQuantidadeEmEstoque() - quantidadeVendida);
             rabbitTemplate.convertAndSend(queueName, produto);
             repository.save(produto);
         });
+
+        return produtoOpt.get().getQuantidadeEmEstoque();
     }
 
     public Produto buscarPorId(Long id) {
