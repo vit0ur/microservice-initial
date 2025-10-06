@@ -26,13 +26,10 @@ public class PedidoConsumer {
     @RabbitListener(queues = "${broker.queue.orders.name}")
     public void processaPedido(ProdutoDTO produtoDTO) {
         try {
-            log.info("Recebido ProdutoDTO: {}", produtoDTO);
-
             Integer quantidade = produtoDTO.getQuantidadeEmEstoque();
             String status;
 
             if (quantidade == null) {
-                log.warn("Quantidade em estoque nula para produto {}", produtoDTO.getIdProduto());
                 status = "ESTOQUE_DESCONHECIDO";
             } else if (quantidade <= 0) {
                 status = "SEM_ESTOQUE";
@@ -42,21 +39,16 @@ public class PedidoConsumer {
                 status = "DISPONIVEL";
             }
 
-            List<ItemPedido> itens = itemPedidoService.buscarPorIdProduto(produtoDTO.getIdProduto());
-
-            if (itens.isEmpty()) {
-                log.warn("Nenhum ItemPedido encontrado para o produto {}", produtoDTO.getIdProduto());
-            }
+            List<ItemPedido> itens = itemPedidoService.buscarPorIdProduto(produtoDTO.getId());
 
             for (ItemPedido itemPedido : itens) {
                 Long idPedido = itemPedido.getPedido().getIdPedido();
-                log.info("Atualizando status do pedido {} para {}", idPedido, status);
                 pedidoService.atualizarStatusPedido(idPedido, status);
             }
 
         } catch (Exception e) {
             log.error("Erro ao processar ProdutoDTO: {}", produtoDTO, e);
-            throw e; // ou trate de forma personalizada, se necessário
+            throw e;
         }
     }
 }

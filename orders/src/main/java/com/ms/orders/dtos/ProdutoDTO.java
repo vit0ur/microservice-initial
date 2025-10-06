@@ -3,7 +3,7 @@ package com.ms.orders.dtos;
 import java.math.BigDecimal;
 
 public class ProdutoDTO {
-    private Long idProduto;
+    private Long id;
     private String nome;
     private BigDecimal preco;
     private Integer quantidadeEmEstoque;
@@ -11,19 +11,19 @@ public class ProdutoDTO {
     public ProdutoDTO() {
     }
 
-    public ProdutoDTO(Long idProduto, String nome, BigDecimal preco, Integer quantidadeEmEstoque) {
-        this.idProduto = idProduto;
+    public ProdutoDTO(Long id, String nome, BigDecimal preco, Integer quantidadeEmEstoque) {
+        this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
 
-    public Long getIdProduto() {
-        return idProduto;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdProduto(Long idProduto) {
-        this.idProduto = idProduto;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {

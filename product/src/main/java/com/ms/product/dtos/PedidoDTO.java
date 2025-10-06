@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public class PedidoDTO {
-    private Long idPedido;
+    private Long id;
     private List<ItemPedidoDTO> listaProdutos;
     private BigDecimal valorTotal;
     private String status;
@@ -12,12 +12,13 @@ public class PedidoDTO {
     public PedidoDTO() {
     }
 
-    public PedidoDTO(Long idPedido, List<ItemPedidoDTO> listaProdutos, BigDecimal valorTotal, String status) {
-        this.idPedido = idPedido;
+    public PedidoDTO(Long id, List<ItemPedidoDTO> listaProdutos, BigDecimal valorTotal, String status) {
+        this.id = id;
         this.listaProdutos = listaProdutos;
         this.valorTotal = valorTotal;
         this.status = status;
     }
+
 
     public String getStatus() {
         return status;
@@ -27,12 +28,12 @@ public class PedidoDTO {
         this.status = status;
     }
 
-    public Long getIdPedido() {
-        return idPedido;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdPedido(Long idPedido) {
-        this.idPedido = idPedido;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public List<ItemPedidoDTO> getListaProdutos() {

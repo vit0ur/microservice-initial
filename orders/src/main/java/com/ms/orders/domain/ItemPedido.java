@@ -16,14 +16,6 @@ public class ItemPedido {
     @JsonBackReference
     private Pedido pedido;
 
-    public Pedido getPedido() {
-        return pedido;
-    }
-
-    public void setPedido(Pedido pedido) {
-        this.pedido = pedido;
-    }
-
     public ItemPedido(Long id, Pedido pedido, Integer quantidade, Long idProduto) {
         this.id = id;
         this.pedido = pedido;
@@ -32,6 +24,14 @@ public class ItemPedido {
     }
 
     public ItemPedido() {
+    }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
     }
 
     public Long getId() {

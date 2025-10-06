@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cce047d-11a2-4011-8ec8-a172660257a4" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/producer/ProdutoProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/consumer/PedidoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/consumer/PedidoConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/controllers/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/controllers/PedidoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/domain/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/consumer/ProdutoConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/consumer/ProdutoConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/dtos/ProdutoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/dtos/ProdutoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/ItemPedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/orders/src/main/java/com/ms/orders/services/ItemPedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/configs/RabbitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/configs/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/dtos/PedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/dtos/PedidoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/producer/ProdutoProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/producer/ProdutoProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/src/main/java/com/ms/product/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/ms/product/service/ProdutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vit0ur"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vit0ur&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/vit0ur/microservice-initial.git",
-    "accountId": "6a5b65f4-3beb-4512-bcb9-c9dbcae2344b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vit0ur/microservice-initial.git&quot;,
+    &quot;accountId&quot;: &quot;6a5b65f4-3beb-4512-bcb9-c9dbcae2344b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -55,16 +56,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.OrdersApplication.executor": "Run",
-    "Application.ProductApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/josarauj/IdeaProjects/microservice-initial"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.OrdersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProductApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/josarauj/IdeaProjects/microservice-initial&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759764552337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1759769745718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759769745718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
